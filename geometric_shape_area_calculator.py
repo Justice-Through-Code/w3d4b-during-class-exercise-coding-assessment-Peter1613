@@ -4,6 +4,32 @@ import math # DO NOT MODIFY
 
 def main():
     circle_pi = math.pi # DO NOT MODIFY, this line of code is assigning the variable 'circle_pi' equal to Pi ~3.14
+    print("Welcome to the geometric shape area calculator!")
+    print(Circle +''+Rectangle+''+Triangle)
+    choice = input("Select a shape by entering (1, 2, or 3) ")
+    print(choice)
+    print(type(choice))
+
+    if choice == 1:
+        radius = input("Input the radius of the circle ")
+        radius = float(radius)
+        area = circle_pi*radius**2
+    elif choice == 2:
+        length = input("Input the length of the rectangle ")
+        radius = input("Input the width of the rectangle ")
+        length = float(length)
+        width = float(width)
+        area = length*width
+    elif choice == 3:
+        base = input("Input the base length of the triangle ")
+        height = input ("Input the height of the triangle ")
+        base = float(base)
+        height = float(height)
+        area = 1/2*base*height
+    else:
+        print("Invalid choice")
+
+
 
     # TODO: In terminal, print Welcome to the geometric shape area calculator!
     
@@ -51,7 +77,7 @@ def main():
         print(f"The area is: {area:.2f} square units.") # DO NOT MODIFY
 
     # TODO: Print a statement explaining each step required to find and complete your technical assignments.  Be specific. 
-
+print("1. Navigate to canvas/courseworks. 2. Click modules and scroll down. 3. Find Live class W3D4 and click.  4. Scroll down and click on During class coding assignment or multiple choice.")
 
 if __name__ == "__main__": # DO NOT MODIFY
-    main() # DO NOT MODIFY
+    #main() # DO NOT MODIFY
