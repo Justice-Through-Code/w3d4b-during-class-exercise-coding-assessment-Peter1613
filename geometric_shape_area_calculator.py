@@ -1,42 +1,23 @@
+
 #geometric_shape_area_calculator
+1
 
 import math # DO NOT MODIFY
 
 def main():
     circle_pi = math.pi # DO NOT MODIFY, this line of code is assigning the variable 'circle_pi' equal to Pi ~3.14
     print("Welcome to the geometric shape area calculator!")
-    print(Circle +''+Rectangle+''+Triangle)
+    print('Circle = 1' +" "+ 'Rectangle = 2' +" "+ 'Triangle = 3')
     choice = input("Select a shape by entering (1, 2, or 3) ")
-    print(choice)
-    print(type(choice))
-
-    if choice == 1:
-        radius = input("Input the radius of the circle ")
-        radius = float(radius)
-        area = circle_pi*radius**2
-    elif choice == 2:
-        length = input("Input the length of the rectangle ")
-        radius = input("Input the width of the rectangle ")
-        length = float(length)
-        width = float(width)
-        area = length*width
-    elif choice == 3:
-        base = input("Input the base length of the triangle ")
-        height = input ("Input the height of the triangle ")
-        base = float(base)
-        height = float(height)
-        area = 1/2*base*height
-    else:
-        print("Invalid choice")
-
-
-
+    choice = int(choice)
+    print(isinstance(choice, int))
+    
     # TODO: In terminal, print Welcome to the geometric shape area calculator!
     
     # User Options
-    # Circle = 1
-    # Rectangle = 2
-    # Triangle = 3
+    Circle = 1
+    Retangle = 2
+    Triangle = 3
     
     # TODO: Using one print statement, use string concatenation to print the options only 
     # as a single string (make sure to add a space between each option)
@@ -48,15 +29,26 @@ def main():
     # TODO: With one line of code, verify the variable 'choice' is indeed the data type integer, use conditional logic and print the output.  If converted correctly, the output in Terminal should read 'True'.
   
     if choice == 1:  #DO NOT REMOVE THE 'IF'
-        # Calculate the area of a circle
+        radius = input("Input the radius of the circle ")
+        radius = float(radius)
+        area = circle_pi*radius**2
 
+        # Calculate the area of a circle
         # TODO: Assign a new variable named 'radius' and ask for the user's input for the radius of the circle.
         # TODO: Convert 'radius' to float.
         # TODO: Assign a new variable named 'area' and implement the logic to calculate the area of a circle.
         # HINT 1 : The formula to find area of a circle: 'circle_pi' times radius squared.  
         # Hint 2 : circle_pi is a variable that has been assigned on Line 9 and equals Pi in math.  
 
+
     elif choice == 2: # DO NOT REMOVE THE 'ELIF'
+        length = input("Input the length of the rectangle ")
+        width = input("Input the width of the rectangle ")
+        length = float(length)
+        width = float(width)
+        area = length*width
+        
+
         # Calculate the area of a rectangle
         # TODO: Assign new variables 'length' and 'width' and ask for the user's input for the length and width of the rectangle.
         # TODO: Convert both 'length' and 'width' to float.
@@ -64,6 +56,12 @@ def main():
         # HINT: The formula to find the area of a rectangle: length times width
 
     elif choice == 3: #DO NOT REMOVE THE 'ELIF'
+        base = input("Input the base length of the triangle ")
+        height = input ("Input the height of the triangle ")
+        base = float(base)
+        height = float(height)
+        area = 0.5*base*height
+
         # Calculate the area of a triangle
         # TODO: Assign new variables 'base' and 'height' and ask for the user's input for the base length and height of the triangle.
         # TODO: Convert both 'base' and 'height' to float.
@@ -71,6 +69,7 @@ def main():
         # HINT: The formula to find the area of a Triangle: half times base times height
 
     else:
+        print("Invalid choice .")
         # TODO: If the user enters anything other than 1, 2 or 3, print statement "Invalid choice ."
     
     if choice in [1, 2, 3]: # DO NOT MODIFY
@@ -80,4 +79,4 @@ def main():
 print("1. Navigate to canvas/courseworks. 2. Click modules and scroll down. 3. Find Live class W3D4 and click.  4. Scroll down and click on During class coding assignment or multiple choice.")
 
 if __name__ == "__main__": # DO NOT MODIFY
-    #main() # DO NOT MODIFY
+    main() # DO NOT MODIFY
