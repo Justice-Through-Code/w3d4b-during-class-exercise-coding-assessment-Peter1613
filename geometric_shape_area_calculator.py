@@ -1,7 +1,4 @@
 
-#geometric_shape_area_calculator
-1
-
 import math # DO NOT MODIFY
 
 def main():
@@ -9,7 +6,7 @@ def main():
     print("Welcome to the geometric shape area calculator!")
     print('Circle = 1' +" "+ 'Rectangle = 2' +" "+ 'Triangle = 3')
     choice = input("Select a shape by entering (1, 2, or 3) ")
-    choice = int(choice)
+    choice = (int(choice))
     print(isinstance(choice, int))
     
     # TODO: In terminal, print Welcome to the geometric shape area calculator!
